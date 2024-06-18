@@ -1,13 +1,12 @@
 
-# [WINNER}
 
 ![Screenshot from 2024-05-27 10-38-47](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/d5059dfa-86c9-4b9d-a6d9-1057bd79bc1e)
 
 
 
-# Demo Video: https://youtu.be/49tyju_PtUQ
+# Demo Video:
 
-# Frontend Deploy Link: https://one-ticket.vercel.app/
+# Frontend Deploy Link: 
 
 
 ## Introduction 
@@ -16,7 +15,7 @@ OneTicket is a revolutionary platform that allows users to create tickets for th
 
 ## Contract Info ->  The  smart contract  is deployed ons scroll sepolia
 
-Contract Address: 0x8d34e7A45329A81157b3A24397e752fD40888FBD
+Contract Address: 
 
 
 ## Working Flow !!
