@@ -121,7 +121,7 @@ async function loadNFTs() {
         <div className="grid flex  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-1 unmrk">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border rounded-t-md  umrkt shadow rounded-xl overflow-hidden">
+              <div key={i} className="border rounded-t-md   shadow rounded-xl overflow-hidden">
                 <img   height="25px"  className = " w-full rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" src={nft.image} />
                 <div className="p-1">
                   <p style={{ height: '100%' }} className="text-2xl font-semibold">{nft.name}</p>

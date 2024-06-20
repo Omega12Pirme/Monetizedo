@@ -23,37 +23,11 @@ function Market() {
 
       <div className="mrkt `{style.wrapper}`">
       <Navbar/>
-        <nav className={`${style.container} border-b p-10`}>
+        <nav className={`${style.container} border-b `}>
        
           <p className="text-5xl py-12 text-white font-medium">Content Hub</p>
 
-          {/* <div className="flex mt-4">
-            <Link href="/">
-              <div className="mr-6 text-black-500">
-                HOME
-              </div>
-            </Link>
-            <Link href="/sellnft">
-              <div className="mr-6 text-black-500">
-                SELL COURSE
-              </div>
-            </Link>
-            <Link href="/mynft">
-              <div className="mr-6 text-black-500">
-                My COURSES
-              </div>
-            </Link>
-            <Link href="/dashboard">
-              <div className="mr-6 text-black-500">
-                Dashboard
-              </div>
-            </Link>
-            <Link href="/Review">
-              <div className="mr-6 text-black-500">
-                COURSE Review
-              </div>
-            </Link>
-          </div> */}
+         
           <Home/>
         </nav>
       </div>
