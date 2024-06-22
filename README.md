@@ -1,6 +1,7 @@
 
 
-![Screenshot from 2024-05-27 10-38-47](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/d5059dfa-86c9-4b9d-a6d9-1057bd79bc1e)
+![Screenshot from 2024-06-23 05-01-32](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/abe2d8ab-589f-4d81-be61-173d7512ba92)
+
 
 
 
@@ -11,9 +12,11 @@
 
 ## Introduction 
 
-OneTicket is a revolutionary platform that allows users to create tickets for their events, resell tickets, and share their event experiences in a dedicated dashboard. This platform eliminates intermediaries, empowering users to manage their events and ticketing seamlessly.
+Monetizedo is a revolutionary platform that allows users to monetize their work , resell work, and anyone can share their experiences in a dedicated dashboard. This platform eliminates intermediaries, empowering users to manage their WORK seamlessly.
 
-## Contract Info ->  The  smart contract  is deployed ons scroll sepolia
+## Contract Info ->  The  smart contract  is deployed ons BASE sepolia
+
+
 
 Contract Address: 
 
@@ -29,43 +32,68 @@ Contract Address:
 - **Experience Gather**: Participant can  share  their experience  after the events ends. So that other users can get  the idea  of the event 
 
 
+## Fracster  Frames 
+
+
+![Screenshot from 2024-06-23 05-13-56](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/7f6723f6-dfaa-4657-a33e-d6fb0b5f1857)
+
+
+### Graph Query 
+
+```
+  const query = `
+  {
+    donations(first: 10, orderBy: id) {
+      from
+      id
+      message
+      name
+      timestamp
+    }
+  }
+  `;
+```
+
+The query code used in the Frame can be found here: https://github.com/Omega12Pirme/Monetizedo/blob/main/Frame/api/index.tsx#L100C1-L110C5
+
 
 ## The Graph Integration
 
 
 I created subgraph for this prroject and query  to make various dashboard like  Marketplace, Dashboard, Experience cebtre
 
-### Here's the Link of the subgraph-> https://thegraph.com/studio/subgraph/tickettwo/
+### Here's the Link of the subgraph-> https://thegraph.com/studio/subgraph/monetizedo/playground
 
 
-![Screenshot from 2024-05-27 10-23-47](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/de38f5e5-1ca3-4874-9db8-5de8893c1d88)
+![Screenshot from 2024-06-23 05-03-42](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/0fe50676-b85d-4951-b278-9335840d4f47)
 
 
-###  The code for creating the Ticket is in: https://github.com/Vikash-8090-Yadav/OneTicket/blob/main/Frontend/pages/marketplace.js#L34
+# Graph query 
 
+###  The code for Montezing the content  is in: https://github.com/Omega12Pirme/Monetizedo/blob/main/Frontend/pages/marketplace.js#L35
 
-###  The code for sharing experience can be found here : https://github.com/Vikash-8090-Yadav/OneTicket/blob/main/Frontend/Component/v1.0.0/Review/Memos.jsx#L11
+###  The code for sharing experience can be found here : https://github.com/Omega12Pirme/Monetizedo/blob/main/Frontend/Component/v1.0.0/Review/Memos.jsx#L14
 
 
 # Working flow 
 
 ## Marketpace 
 
-- Any user can buy the ticket and can attend the event
+- Any user can buy the work  of others in the form  of nft 
 
 ![Screenshot from 2024-05-27 10-38-47](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/4572494f-5d3f-470e-9a83-4f76942697fa)
 
 
-## Creat Event 
+## MOneztize work  
 
-- Any  owner can create the ticket for their event
+- Any  owner can monetize their work in the form of NFT they will get METT tokens as a reward 
 
 ![Screenshot from 2024-05-27 10-40-33](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/60be4e17-b976-4652-9089-49666bed0567)
 
 
 ## Re sell 
 
-- Any user who buys the ticket can re sell it to the one who needs it
+- Any user who buys the work  can re sell it to the one who needs it
 
 ![Screenshot from 2024-05-27 10-41-03](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/b815ba4d-353a-42a1-bd9b-f12415c0193b)
 
@@ -95,7 +123,7 @@ I created subgraph for this prroject and query  to make various dashboard like  
 |LightHouse | Store file Secure, Reliable, & Lightning-Fast with Lighthouse. |https://www.lighthouse.storage/|
 |ChainLLink | Chainlink is the decentralized computing platform powering the verifiable web| https://chain.link/|
 |The Graph| The Graph is a decentralized protocol for indexing and querying blockchain data. The Graph makes it possible to query data that is difficult to query directly.|https://thegraph.com/ | 
-
+|Warpcast| Warpcast is a client for Farcaster, a decentralized social network. It is a paid-for social media platform that allows users to create a profile, post public messages, and connect with others. Unlike traditional social media apps, Warpcast is built on the blockchain, making it open, permissionless, and decentralized. | https://warpcast.com/|
 
 
 
