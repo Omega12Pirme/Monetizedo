@@ -7,8 +7,9 @@
 
 # Demo Video:
 
-# Frontend Deploy Link: 
+# Frontend Deploy Link: https://monetizedo-ar51.vercel.app/
 
+## Farcaster  Frame: 
 
 ## Introduction 
 
@@ -18,18 +19,24 @@ Monetizedo is a revolutionary platform that allows users to monetize their work 
 
 
 
-Contract Address: 
+Contract Address: 0x6D89e1be18912D3F212e16A4E40AfaEd4eaF5a08
+
+https://base-sepolia.blockscout.com/address/0x6D89e1be18912D3F212e16A4E40AfaEd4eaF5a08
+
+
+![Screenshot from 2024-06-23 05-18-49](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/af8b506c-7a5b-4bfc-ba9a-6d8338cf107b)
+
 
 
 ## Working Flow !!
 
-- **Create Event**: Users can easily Create their Tickets for the events.
+- **Monetize Content**: Users can easily monetize their content/ work .
 
 - **Unique Digital Assets**: Each ticket is represented as a unique digital asset called an NFT (non-fungible token), ensuring it has its own digital identity that can't be replicated or divided.
 
-- **Buy and Resell**: Anyone can buy these Ticket products from the  event owner, and once someone owns an NFT, they can resell it to others.
+- **Buy and Resell**: Anyone can buy these content/work products from the   owner, and once someone owns an NFT, they can resell it to others.
 
-- **Experience Gather**: Participant can  share  their experience  after the events ends. So that other users can get  the idea  of the event 
+- **Experience Gather**: Participant can  share  their experience  after the events ends. So that other users can get  the idea  of the user work 
 
 
 ## Fracster  Frames 
@@ -81,7 +88,8 @@ I created subgraph for this prroject and query  to make various dashboard like  
 
 - Any user can buy the work  of others in the form  of nft 
 
-![Screenshot from 2024-05-27 10-38-47](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/4572494f-5d3f-470e-9a83-4f76942697fa)
+![Screenshot from 2024-06-23 05-17-11](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/5c229e7c-9d73-48a3-ae34-1c59a0d7849a)
+
 
 
 ## MOneztize work  
