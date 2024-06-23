@@ -6,7 +6,7 @@ import Navbar from "../Component/Course/Nav";
 import { createClient } from "urql";
 import { ToastContainer, toast } from 'react-toastify';
 import { notification } from 'antd';
-
+import {Web3} from 'web3';
 
 import {
   marketplaceAddress
@@ -47,26 +47,65 @@ export default function Home() {
   });
 
   useEffect(() => {
-  if (!client) {
-    return;
-  }
 
-  const getTokens = async () => {  
+    async function  test(){
+
+      const networks = {
+        basesepolia: {
+        chainId: `0x${Number(84532).toString(16)}`,
+        chainName: "basesepolia",
+        nativeCurrency: {
+          name: "basesepolia",
+          symbol: "ETH",
+          decimals: 18,
+        },
+        rpcUrls: ["https://sepolia.base.or"],
+      },
+    };
+    if(typeof window.ethereum =="undefined"){
+      console.log("PLease install the metamask");
+  }
+  let web3 =  new Web3(window.ethereum);
+ 
+  if(web3.network !=="basesepolia"){
+      await window.ethereum.request({
+          method:"wallet_addEthereumChain",
+          params:[{
+              ...networks["basesepolia"]
+          }]
+      })
+  }
+}
+async function checkNetworkAndLoadNFTs() {
+  try {
+    const web3 = new Web3(window.ethereum);
+    const currentChainId = await web3.eth.getChainId();
+    localStorage.setItem("ChainId",currentChainId);
+
+   
     
-    try {
-      const { data } = await client.query(query).toPromise();
+  
+
+    let chk = localStorage.getItem("ChainId");
+
+
+
+
+    if (chk !== '84532') { 
+      await test();
+    }
+    const { data } = await client.query(query).toPromise();
       setTokens(data.tokenItems);
       // console.log(data.tokenItems);
       setIsLoading(false); // Data is loaded
       await loadNFTs();
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+  } catch (error) {
+    console.error('Error checking network or loading NFTs:', error);
+  }
+}
 
-  getTokens();
-  // fetchNftTransactions();
-}, [client]);
+checkNetworkAndLoadNFTs();
+  }, [])
 
 async function loadNFTs() {
   // await test();
