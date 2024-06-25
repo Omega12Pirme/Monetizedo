@@ -34,9 +34,9 @@ export default function Home() {
   let query = `
     {
       tokenItems {
+        newTokenId
       tokenURI
       price
-      newTokenId
       transactionHash
       }
     }
@@ -47,6 +47,10 @@ export default function Home() {
   });
 
   useEffect(() => {
+
+    if (!client) {
+      return;
+    }
 
     async function  test(){
 
@@ -88,24 +92,23 @@ async function checkNetworkAndLoadNFTs() {
 
     let chk = localStorage.getItem("ChainId");
 
-
-
+    const { data } = await client.query(query).toPromise();
+      setTokens(data.tokenItems);
+      console.log(data.tokenItems);
+      setIsLoading(false); // Data is loaded
+      await loadNFTs();
 
     if (chk !== '84532') { 
       await test();
     }
-    const { data } = await client.query(query).toPromise();
-      setTokens(data.tokenItems);
-      // console.log(data.tokenItems);
-      setIsLoading(false); // Data is loaded
-      await loadNFTs();
+    
   } catch (error) {
     console.error('Error checking network or loading NFTs:', error);
   }
 }
 
 checkNetworkAndLoadNFTs();
-  }, [])
+  }, [client])
 
 async function loadNFTs() {
   // await test();
