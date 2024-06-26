@@ -60,7 +60,7 @@ https://base-sepolia.blockscout.com/address/0x6D89e1be18912D3F212e16A4E40AfaEd4e
 - **Experience Gather**: Participant can  share  their experience  after the events ends. So that other users can get  the idea  of the user work 
 
 
-## Fracster  Frames 
+## Graph integeration Fracster  Frames 
 
 
 ![Screenshot from 2024-06-23 05-13-56](https://github.com/Omega12Pirme/Monetizedo/assets/105157723/7f6723f6-dfaa-4657-a33e-d6fb0b5f1857)
@@ -85,7 +85,7 @@ https://base-sepolia.blockscout.com/address/0x6D89e1be18912D3F212e16A4E40AfaEd4e
 The query code used in the Frame can be found here: https://github.com/Omega12Pirme/Monetizedo/blob/main/Frame/api/index.tsx#L100C1-L110C5
 
 
-## The Graph Integration
+## The Graph Integration in Frontend Dapp
 
 
 I created subgraph for this prroject and query  to make various dashboard like  Marketplace, Dashboard, Experience cebtre
