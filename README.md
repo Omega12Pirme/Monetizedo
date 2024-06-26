@@ -9,26 +9,7 @@
 
 # Frontend Deploy Link: https://monetizedo-ar51.vercel.app/
 
-
-### How to run farcaster Frame 
-
-`- Clone this repo 
-``` git clone https://github.com/Omega12Pirme/Monetizedo.git ```
-
-- Got to the Frame directory
-
-  ``` cd  Monetizedo/Frane ```
-  
-- start the  project
-  ``` npm run dev ```
-
-- Start the ngrok server
-
-  ``` ngrok http http://localhost:5173 ```
-- Got to dev farcaster and paste the ngrok link with /api append https://warpcast.com/~/developers/frames
-
-
-
+# Frame: https://warpcast.com/~/developers/frames?url=https%3A%2F%2Fmonetizedo.vercel.app%2Fapi
 
   
 
@@ -132,6 +113,26 @@ I created subgraph for this prroject and query  to make various dashboard like  
 - Any member can share their after event experience
 
 ![Screenshot from 2024-05-27 10-41-26](https://github.com/Vikash-8090-Yadav/OneTicket/assets/85225156/1487f135-125b-40a1-b178-d24abd3312ff)
+
+
+
+### How to run farcaster Frame  Locally
+
+`- Clone this repo 
+``` git clone https://github.com/Omega12Pirme/Monetizedo.git ```
+
+- Got to the Frame directory
+
+  ``` cd  Monetizedo/Frane ```
+  
+- start the  project
+  ``` npm run dev ```
+
+- Start the ngrok server
+
+  ``` ngrok http http://localhost:5173 ```
+- Got to dev farcaster and paste the ngrok link with /api append https://warpcast.com/~/developers/frames
+
 
  
 
