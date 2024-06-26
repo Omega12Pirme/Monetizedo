@@ -5,11 +5,32 @@
 
 
 
-# Demo Video:
+# Demo Video: https://youtu.be/8c6AN52xaEQ?si=POdsUoxyUylUAPMv
 
 # Frontend Deploy Link: https://monetizedo-ar51.vercel.app/
 
-## Farcaster  Frame: 
+
+### How to run farcaster Frame 
+
+`- Clone this repo 
+``` git clone https://github.com/Omega12Pirme/Monetizedo.git ```
+
+- Got to the Frame directory
+
+  ``` cd  Monetizedo/Frane ```
+  
+- start the  project
+  ``` npm run dev ```
+
+- Start the ngrok server
+
+  ``` ngrok http http://localhost:5173 ```
+- Got to dev farcaster and paste the ngrok link with /api append https://warpcast.com/~/developers/frames
+
+
+
+
+  
 
 ## Introduction 
 
